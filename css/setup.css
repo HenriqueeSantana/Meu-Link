@@ -1,0 +1,415 @@
+/* Reset e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0f1a;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 2em 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="none" width="100" height="100"/><rect fill="rgba(255,255,255,0.03)" width="50" height="50"/><rect fill="rgba(255,255,255,0.03)" x="50" y="50" width="50" height="50"/></svg>');
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #ff0000;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Introdução */
+.setup-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border-left: 4px solid #ff0000;
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ff0000;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #b0b0b0;
+}
+
+/* Grid de itens */
+.setup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Item do setup */
+.setup-item {
+    background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.setup-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Container da imagem */
+.setup-image-container {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.setup-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.setup-item:hover .setup-image {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.setup-item:hover .image-overlay {
+    opacity: 1;
+}
+
+.view-details {
+    color: white;
+    background: rgba(255, 0, 0, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Informações do item */
+.setup-info {
+    padding: 1.5rem;
+}
+
+.setup-info h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.specs {
+    margin-bottom: 1.5rem;
+}
+
+.spec-item {
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spec-label {
+    font-weight: 600;
+    color: #a0a0a0;
+    margin-right: 0.5rem;
+    min-width: 120px;
+}
+
+.spec-value {
+    color: #e0e0e0;
+}
+
+/* Botão de detalhes */
+.details-btn {
+    background: linear-gradient(90deg, #ff0000 0%, #2c2322 100%);
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+.details-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Avaliação por estrelas */
+.setup-rating {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.setup-rating h3 {
+    margin-bottom: 1rem;
+    color: #ff0000;
+}
+
+.rating-stars {
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.rating-stars i {
+    margin: 0 0.2rem;
+    transition: all 0.2s ease;
+}
+
+.rating-stars i:hover {
+    transform: scale(1.2);
+}
+
+#rating-message {
+    color: #a0a0a0;
+    font-style: italic;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+
+.modal-content {
+    background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    animation: modalFadeIn 0.4s;
+}
+
+@keyframes modalFadeIn {
+    from {opacity: 0; transform: translateY(-50px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: #ff0000;
+}
+
+.modal-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #ff0000;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.modal-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.modal-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.modal-specs {
+    flex: 1;
+    min-width: 300px;
+}
+
+.modal-specs h3 {
+    color: #ff0000;
+    margin-bottom: 1rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.modal-specs h4 {
+    color: #00ccff;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.modal-specs p {
+    margin-bottom: 0.5rem;
+}
+
+/* Botão de voltar */
+.back-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff0000 0%, #2c2322 100%);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: 2rem 0;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.3);
+}
+
+.back-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.back-button:hover::before {
+    left: 100%;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 2rem 0;
+    margin-top: 4rem;
+    border-top: 3px solid #ff0000;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer p {
+    color: #a0a0a0;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: rgba(255, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.social-link:hover {
+    color: #ff0000;
+    background: rgba(255, 0, 0, 0.2);
+    transform: translateY(-3px);
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Setup Gamer - Henrique Santana</title>
+    <link rel="stylesheet" href="./css/setup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1><i class="fas fa-gamepad"></i> Meu Setup Gamer</h1>
+            <p class="subtitle">Configuração completa para jogos e desenvolvimento</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="setup-intro" data-aos="fade-up">
+            <h2 class="section-title">Bem-vindo ao meu espaço digital</h2>
+            <p class="intro-text">Confira os componentes que utilizo para jogos e desenvolvimento de software. Cada peça foi escolhida cuidadosamente para oferecer o melhor desempenho.</p>
+        </div>
+
+        <div class="setup-grid">
+            <div class="setup-item" data-aos="fade-up">
+                <div class="setup-image-container">
+                    <img src="./img/setup img/20250305_192900~2.jpg" alt="PC" class="setup-image">
+                    <div class="image-overlay">
+                        <span class="view-details">Ver detalhes</span>
+                    </div>
+                </div>
+                <div class="setup-info">
+                    <h2><i class="fas fa-desktop"></i> Computador</h2>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Processador:</span>
+                            <span class="spec-value">Ryzen 5600GT</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Memória RAM:</span>
+                            <span class="spec-value">16GB DDR4 3600MHz</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Fonte:</span>
+                            <span class="spec-value">Mancer Thunder 500W Bronze 80</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Armazenamento:</span>
+                            <span class="spec-value">SSD 120GB + HD 2TB</span>
+                        </div>
+                    </div>
+                    <button class="details-btn" onclick="showDetails('pc')">Mais informações</button>
+                </div>
+            </div>
+
+            <div class="setup-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="setup-image-container">
+                    <img src="img/setup img/monitor.jpg" alt="Monitor" class="setup-image">
+                    <div class="image-overlay">
+                        <span class="view-details">Ver detalhes</span>
+                    </div>
+                </div>
+                <div class="setup-info">
+                    <h2><i class="fas fa-tv"></i> Monitor</h2>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Modelo:</span>
+                            <span class="spec-value">LG Ultragear 27'' 144Hz</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Resolução:</span>
+                            <span class="spec-value">2560x1440 (QHD)</span>
+                        </div>
+                    </div>
+                    <button class="details-btn" onclick="showDetails('monitor')">Mais informações</button>
+                </div>
+            </div>
+
+            <div class="setup-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="setup-image-container">
+                    <img src="img/setup img/teclado.jpg" alt="Teclado" class="setup-image">
+                    <div class="image-overlay">
+                        <span class="view-details">Ver detalhes</span>
+                    </div>
+                </div>
+                <div class="setup-info">
+                    <h2><i class="fas fa-keyboard"></i> Teclado</h2>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Modelo:</span>
+                            <span class="spec-value">Redragon Lakshmi Rainbow</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Switch:</span>
+                            <span class="spec-value">Mecânico Azul</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Layout:</span>
+                            <span class="spec-value">ABNT2</span>
+                        </div>
+                    </div>
+                    <button class="details-btn" onclick="showDetails('teclado')">Mais informações</button>
+                </div>
+            </div>
+
+            <div class="setup-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="setup-image-container">
+                    <img src="img/setup img/mouse.avif" alt="Mouse" class="setup-image">
+                    <div class="image-overlay">
+                        <span class="view-details">Ver detalhes</span>
+                    </div>
+                </div>
+                <div class="setup-info">
+                    <h2><i class="fas fa-mouse"></i> Mouse</h2>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Modelo:</span>
+                            <span class="spec-value">ATTACK SHARK R1</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">DPI:</span>
+                            <span class="spec-value">16.000</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Sensor:</span>
+                            <span class="spec-value">Óptico de alta precisão</span>
+                        </div>
+                    </div>
+                    <button class="details-btn" onclick="showDetails('mouse')">Mais informações</button>
+                </div>
+            </div>
+
+            <div class="setup-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="setup-image-container">
+                    <img src="img/setup img/fone.jpg" alt="Headset" class="setup-image">
+                    <div class="image-overlay">
+                        <span class="view-details">Ver detalhes</span>
+                    </div>
+                </div>
+                <div class="setup-info">
+                    <h2><i class="fas fa-headset"></i> Headset</h2>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Modelo:</span>
+                            <span class="spec-value">Headset Gamer Mancer</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Áudio:</span>
+                            <span class="spec-value">Surround 7.1</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Conexão:</span>
+                            <span class="spec-value">USB com controle de volume</span>
+                        </div>
+                    </div>
+                    <button class="details-btn" onclick="showDetails('headset')">Mais informações</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="setup-rating">
+            <h3>O que você achou do meu setup?</h3>
+            <div class="rating-stars">
+                <i class="far fa-star" data-rating="1"></i>
+                <i class="far fa-star" data-rating="2"></i>
+                <i class="far fa-star" data-rating="3"></i>
+                <i class="far fa-star" data-rating="4"></i>
+                <i class="far fa-star" data-rating="5"></i>
+            </div>
+            <p id="rating-message">Clique para avaliar</p>
+        </div>
+
+        <div class="modal" id="detailsModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="modalContent"></div>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Voltar para a página inicial</a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Henrique Santana - Todos os direitos reservados</p>
+            <div class="social-links">
+                <a href="https://github.com/HenriqueeSantana" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/henrique-santana-a548b5289/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/__henrique.sant/" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/setup.js"></script>
+</body>
+</html>
